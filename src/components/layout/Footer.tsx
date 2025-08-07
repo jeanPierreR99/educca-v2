@@ -19,7 +19,7 @@ const Footer = () => {
                         <li><a href="https://procompite.appmunitambopata.com/" className="hover:underline">Procompite</a></li>
                         <li><a href="#" className="hover:underline">Proinnova</a></li>
                         <li><a href="https://www.transparencia.gob.pe/" className="hover:underline">gob.pe</a></li>
-                        <li><a href="https://educca.appmunitambopata.com/" className="hover:underline">Educca</a></li>
+                        <li><a href="https://ivp.appmunitambopata.com/" className="hover:underline">Ivp</a></li>
                     </ul>
                 </div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
                     <ul className="space-y-3 text-sm">
                         <li>
                             <span className="font-medium">Dirección:</span><br />
-                            Jr. CHIMICUAS esquina con Jr. MANCO INCA S/N  – Puerto Maldonado
+                            Jr. LORETO #161  – Puerto Maldonado
                         </li>
                         <li>
                             <span className="font-medium">Teléfono:</span><br />
@@ -38,7 +38,7 @@ const Footer = () => {
                         <li>
                             <span className="font-medium">Correo electrónico:</span><br />
                             <a href="mailto:informes@tambopata.gob.pe" className="text-blue-700  hover:underline">
-                                educca.tambopata@gmail.com
+                                informes.tambopata.gop.pe
                             </a>
                         </li>
                     </ul>
@@ -49,11 +49,11 @@ const Footer = () => {
                     <h4 className="text-lg font-semibold mb-4">Ubicación</h4>
                     <iframe
                         title="Ubicación Municipalidad Tambopata"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.040309758467!2d-69.1876919852381!3d-12.593342090988753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915c5c266b6f1663%3A0x239c80b0b8a346ec!2sMunicipalidad%20Provincial%20de%20Tambopata!5e0!3m2!1ses!2spe!4v1650034345603!5m2!1ses!2spe"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d839.729330009995!2d-69.17536645076666!3d-12.594832349289103!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1754311647979!5m2!1ses!2spe"
                         width="100%"
                         height="200"
                         loading="lazy"
-                        className="rounded-lg shadow"
+                        className="shadow-lg"
                         allowFullScreen
                     ></iframe>
                 </div>

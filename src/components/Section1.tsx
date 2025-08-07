@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Section1 = () => {
     return (
-        <div className="flex relative flex-col md:flex-row gap-6 md:gap-10 lg:px-36 py-10 bg-gray-50">
+        <div id="about" className="flex relative flex-col md:flex-row gap-6 md:gap-10 lg:px-36 py-10 bg-gray-50">
             <h1 className='absolute hidden lg:block top-6/12 translate-y-[-50%] font-bold rotate-90 text-7xl -left-40 text-gray-300 opacity-20'>TAMBOPATA</h1>
             <h1 className='absolute hidden lg:block top-6/12 translate-y-[-50%] font-bold rotate-90 text-7xl -right-40 text-gray-300 opacity-20'>RECICLEMOS</h1>
 

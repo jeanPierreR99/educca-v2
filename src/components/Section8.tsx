@@ -5,11 +5,42 @@ import { motion } from 'framer-motion'
 
 const slides = [
     {
-        mainImage: "Recurso 24con lineas.png",
+        title: "2° CAPACITACIÓN A PAJ Y PAC 16-06-2025",
+        mainImage: "c1-1.jpg",
         middleImages: [
-            "Recurso 25con lineas.png",
-            "Recurso 26con lineas.png",
-            "Recurso 27con lineas.png"
+            "c1-2.jpg",
+            "c1-3.jpg",
+            "c1-4.jpg"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "TERCER ECOTRUEQUE MARZO 22",
+        mainImage: "c2-1.jpg",
+        middleImages: [
+            "c2-2.jpg",
+            "c2-3.jpg",
+            "c2-4.jpg"
+        ],
+        stats:
+        {
+            participantes: 250,
+            reciclados: 150,
+            horas: 100
+        },
+    },
+    {
+        title: "ACTIVACIÓN MERCADO MODELO 08-05-2025",
+        mainImage: "c3-1.jpg",
+        middleImages: [
+            "c3-2.jpg",
+            "c3-3.jpg",
+            "c3-4.jpg"
         ],
         stats:
         {
@@ -19,39 +50,12 @@ const slides = [
         },
     },
     {
-        mainImage: "Recurso 24con lineas.png",
+        title: "REAPERTURA Y SENSIBILIZACION- PARQUE JAVIER HERAUD 17-05-2025",
+        mainImage: "c4-1.jpg",
         middleImages: [
-            "Recurso 25con lineas.png",
-            "Recurso 26con lineas.png",
-            "Recurso 27con lineas.png"
-        ],
-        stats:
-        {
-            participantes: 150,
-            reciclados: 150,
-            horas: 150
-        },
-    },
-    {
-        mainImage: "Recurso 24con lineas.png",
-        middleImages: [
-            "Recurso 25con lineas.png",
-            "Recurso 26con lineas.png",
-            "Recurso 27con lineas.png"
-        ],
-        stats:
-        {
-            participantes: 150,
-            reciclados: 150,
-            horas: 150
-        },
-    },
-    {
-        mainImage: "Recurso 24con lineas.png",
-        middleImages: [
-            "Recurso 25con lineas.png",
-            "Recurso 26con lineas.png",
-            "Recurso 27con lineas.png"
+            "c4-2.jpg",
+            "c4-3.jpg",
+            "c4-4.jpg"
         ],
         stats:
         {
@@ -114,18 +118,16 @@ const Section8 = () => {
                         >
                             <div className='rounded-lg overflow-hidden h-auto'>
                                 <div className='bg-green-600 text-white p-2 text-sm'>
-                                    <p className='font-bold'>Campaña de Reciclaje julio 2025</p>
-                                    <p className='text-xs'>Campaña Ecotrueque para la recolección de residuos reciclables</p>
+                                    <p className='font-bold'>{item.title}</p>
                                 </div>
                                 <img
                                     src={item.mainImage}
                                     alt={`obra-${idx}`}
                                     className="w-full object-cover h-[250px] hover:scale-105 duration-400"
                                 />
-                                <div className='grid grid-cols-3 gap-2 mt-2'>
-                                    <img src="Recurso 25con lineas.png" className='w-full h-full hover:scale-105 duration-400 rounded-lg' alt="" />
-                                    <img src="Recurso 26con lineas.png" className='w-full h-full hover:scale-105 duration-400 rounded-lg' alt="" />
-                                    <img src="Recurso 27con lineas.png" className='w-full h-full hover:scale-105 duration-400 rounded-lg' alt="" />
+                                <div className='grid grid-cols-3 gap-2 py-2'>
+                                    {item.middleImages.map((i, index) =>
+                                        <img key={index} src={i} className='w-full h-45 hover:scale-105 duration-400 rounded-lg' alt="" />)}
                                 </div>
                                 <div className='bg-gray-100 flex gap-2 items-center lg:px-20 justify-between p-2 text-gray-400'>
                                     <div className='flex items-center gap-2'>

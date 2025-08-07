@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 const images = [
     "Recurso 20con lineas.png",
-    "Recurso 21con lineas.png",
-    "Recurso 22con lineas.png",
-    "Recurso 23con lineas.png"
+    "ae1.jpg",
+    "ae2.jpg",
+    "ae3.jpg"
 ];
 
 const Section7 = () => {
@@ -42,7 +42,7 @@ const Section7 = () => {
                         key={i}
                         src={src}
                         alt={`evento-${i}`}
-                        className="w-full h-full object-cover rounded-md hover:scale-105 relative transition-transform duration-300"
+                        className="w-full h-full object-cover hover:scale-105 relative transition-transform duration-300"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: i * 0.2 }}

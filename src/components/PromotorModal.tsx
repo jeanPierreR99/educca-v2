@@ -6,10 +6,10 @@ type Props = {
     open: boolean;
     onClose: () => void;
     title: string;
-    items: string[];
+    content: any;
 };
 
-const PromoterModal = ({ open, onClose, title, items }: Props) => {
+const PromoterModal = ({ open, onClose, title, content }: Props) => {
     if (!open) return null;
 
     const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -27,7 +27,7 @@ const PromoterModal = ({ open, onClose, title, items }: Props) => {
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
-                className="bg-white rounded-lg shadow-xl cursor-default max-w-md w-full p-6 relative"
+                className="bg-white rounded-lg shadow-xl cursor-default max-w-5xl w-full p-6 relative"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
@@ -37,11 +37,7 @@ const PromoterModal = ({ open, onClose, title, items }: Props) => {
                     <X />
                 </button>
                 <h2 className="text-xl font-bold text-green-700 mb-4">{title}</h2>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                    {items.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                    ))}
-                </ul>
+                {content}
             </motion.div>
         </div>
     );

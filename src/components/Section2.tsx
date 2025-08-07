@@ -24,7 +24,7 @@ const Section2 = () => {
                     y la segregación de residuos.
                 </p>
                 <p className='flex gap-2 items-start'>
-                    <Check className="h-5 w-5 shrink-0 bg-amber-400 rounded-full text-white" /> mplementar medidas de protección a travez de proyectos de reforestación
+                    <Check className="h-5 w-5 shrink-0 bg-amber-400 rounded-full text-white" /> Implementar medidas de protección a travez de proyectos de reforestación
                     ambientales y mejora en la gestión de residuos sólidos.
                 </p>
                 <p className='flex gap-2 items-start'>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ArrowBigRight } from "lucide-react";
 import {
     BarChart,
     Bar,
@@ -32,14 +33,14 @@ const data = [
         name: "Promotores Juveniles (PAJ)",
         meta: 20,
         avance: 27,
-        muujeres: 19,
+        mujeres: 19,
         varones: 8
     },
     {
         name: "Promotores Comunitarios (PAC)",
         meta: 20,
         avance: 20,
-        muujeres: 14,
+        mujeres: 14,
         varones: 6
     },
     {
@@ -75,7 +76,7 @@ const radialData = [
 
 const Section6 = () => {
     return (
-        <div className="text-center relative">
+        <div id="content" className="text-center relative">
             {/* Título principal */}
             <motion.h4
                 initial={{ opacity: 0, y: 40 }}
@@ -101,7 +102,7 @@ const Section6 = () => {
             <div className="px-4 lg:px-0 bg-gray-100 p-4 mt-10">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 p-2">
                     {/* Gráfico de Barras */}
-                    <div className="col-span-1 lg:col-span-4 h-[300px] sm:h-[400px]">
+                    <div className="col-span-1 lg:col-span-4 h-[300px] sm:h-[580px]">
                         <div className="bg-white rounded-xl w-full h-full p-2">
                             <ResponsiveContainer width="100%" height="100%">
                                 <BarChart
@@ -168,12 +169,18 @@ const Section6 = () => {
                                 </RadialBarChart>
                             </ResponsiveContainer>
                         </div>
+                        <div className="w-full flex flex-col gap-2">
+                            <a href="/doc/calendario_ambiental.pdf" target="_blank" className="sahdow-xl cursor-pointer hover:bg-green-600 hover:text-white flex gap-2 items-center justify-center text-gray-500 transition-colors bg-white px-2 py-1 rounded-md text-sm w-full">Calendario ambiental<ArrowBigRight /></a>
+                            <a href="/doc/ORDENANZA MUNICIPAL N°006-2023-CMPT-SO.pdf" target="_blank" className="sahdow-xl cursor-pointer hover:bg-green-600 hover:text-white flex gap-2 items-center justify-center text-gray-500 transition-colors bg-white px-2 py-1 rounded-md text-sm w-full">Ordenanza municipal 006-2023<ArrowBigRight /></a>
+                            <a href="/doc/Ordenanza_Municipal_006_2023.pdf" target="_blank" className="sahdow-xl cursor-pointer hover:bg-green-600 hover:text-white flex gap-2 items-center justify-center text-gray-500 transition-colors bg-white px-2 py-1 rounded-md text-sm w-full">Ordenanza municipal 006-2023<ArrowBigRight /></a>
+                            <a href="/doc/RESOLUCIÓN DE GERENCIA MUNICIPAL 042-2025-MPT-GM.pdf" target="_blank" className="sahdow-xl cursor-pointer hover:bg-green-600 hover:text-white flex gap-2 items-center justify-center text-gray-500 transition-colors bg-white px-2 py-1 rounded-md text-sm w-full">Resolución de generencia municipal<ArrowBigRight /></a>
+                        </div>
                     </div>
                 </div>
 
                 {/* Nota */}
                 <p className="text-[#1F87C8] text-left p-2 mx-4 bg-blue-100 border-l-4 border-blue-400 mt-4 text-sm md:text-base">
-                    Nota: Los porcentajes de avance superiores al 100% indican que ya se ha superado la meta establecida para el año 2025 en esa categoría. Los datos de “Mujeres” y “Varones” se muestran cuando están disponibles para la categoría conseguido.
+                    <strong>Nota:</strong> Los porcentajes de avance superiores al 100% indican que ya se ha superado la meta establecida para el año 2025 en esa categoría. Los datos de “Mujeres” y “Varones” se muestran cuando están disponibles para la categoría conseguido.
                 </p>
             </div>
         </div>

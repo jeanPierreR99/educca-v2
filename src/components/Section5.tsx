@@ -32,7 +32,7 @@ const Section5 = () => {
                     viewport={{ once: true }}
                     className='bg-white shadow-lg rounded-xl p-4 text-left'
                 >
-                    <p className='bg-yellow-400 text-green-700 p-2 rounded-md font-bold text-sm mb-2'>
+                    <p className='bg-yellow-400 shadow-lg text-green-700 p-2 rounded-md font-bold text-sm mb-2'>
                         Educación Ambiental Escolar
                     </p>
                     <p className='text-gray-500 text-sm leading-relaxed text-center'>
@@ -59,7 +59,7 @@ const Section5 = () => {
                     {
                         icon: "Recurso 10con lineas.png",
                         value: "42",
-                        label: "Escuelas principales"
+                        label: "Instituciones educativas"
                     }
                 ].map((item, i) => (
                     <motion.div
@@ -96,7 +96,7 @@ const Section5 = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                     className='space-y-4 py-4 relative px-4 lg:px-0'>
-                    <p className='p-2 bg-yellow-400 text-green-600 font-bold'>Educación Ambiental Comunitaria</p>
+                    <p className='p-2 bg-yellow-400 text-green-600 font-bold shadow-lg rounded-md'>Educación Ambiental Comunitaria</p>
                     <p className='text-md text-left text-gray-400'>Promueve valores ambientales para mejorar
                         la calidad de vida de las personas, a través del
                         diseño e implementación de espacios públicos
@@ -120,7 +120,7 @@ const Section5 = () => {
                             viewport={{ once: true }}
                             src="Recurso 35patter.png" alt=""
                             className='hover:-rotate-45 duration-400'
-                            />
+                        />
                     </div>
                     <div className=' flex flex-col gap-4'>
                         <motion.img
@@ -130,7 +130,7 @@ const Section5 = () => {
                             viewport={{ once: true }}
                             src="Recurso 36patter.png" alt=""
                             className='hover:-rotate-45 duration-400'
-                            />
+                        />
                         <motion.img
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +138,7 @@ const Section5 = () => {
                             viewport={{ once: true }}
                             src="Recurso 37patter.png" alt=""
                             className='hover:-rotate-45 duration-400'
-                            />
+                        />
 
                     </div>
                 </div>
