@@ -5,6 +5,51 @@ import { motion } from 'framer-motion'
 
 const slides = [
     {
+        title: "AV. FITZCARRALD CON PSJ CARLOS BRIOLO",
+        mainImage: "c3-3.png",
+        middleImages: [
+            "c3-2.png",
+            "c3-1.png",
+            "c3-4.png"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "JR TACNA CON PSJ LAS ORQUÍDEAS",
+        mainImage: "c2-4.png",
+        middleImages: [
+            "c2-2.png",
+            "c2-3.png",
+            "c2-1.png"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "JR. TACNA CON PSJ. LOS GERANIOS",
+        mainImage: "c1-4.png",
+        middleImages: [
+            "c1-2.png",
+            "c1-3.png",
+            "c1-1.png"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
         title: "2° CAPACITACIÓN A PAJ Y PAC 16-06-2025",
         mainImage: "c1-1.jpg",
         middleImages: [

@@ -32,10 +32,6 @@ const Footer = () => {
                             Jr. LORETO #161  – Puerto Maldonado
                         </li>
                         <li>
-                            <span className="font-medium">Teléfono:</span><br />
-                            969726898, 990664885
-                        </li>
-                        <li>
                             <span className="font-medium">Correo electrónico:</span><br />
                             <a href="mailto:informes@tambopata.gob.pe" className="text-blue-700  hover:underline">
                                 informes.tambopata.gop.pe
