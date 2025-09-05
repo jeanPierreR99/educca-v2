@@ -5,6 +5,126 @@ import { motion } from 'framer-motion'
 
 const slides = [
     {
+        title: "SEPTIMO ECOTRUEQUE",
+        mainImage: "ecotrueque1.jpeg",
+        middleImages: [
+            "ecotrueque2.jpeg",
+            "ecotrueque3.jpeg",
+            "ecotrueque4.jpeg"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "SENSIBLIZACIÓN I.E. MARCELINO CHAMPAGNAT",
+        mainImage: "marcelino1.jpg",
+        middleImages: [
+            "marcelino2.JPG",
+            "marcelino3.JPG",
+            "marcelino4.JPG"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "SENSIBILIZACION I.E. TRILCE",
+        mainImage: "trilce1.jpeg",
+        middleImages: [
+            "trilce2.jpeg",
+            "trilce3.jpeg",
+            "trilce4.jpeg"
+        ],
+        stats:
+        {
+            participantes: 43,
+            reciclados: 70,
+            horas: 60
+        },
+    },
+    {
+        title: "SENSIBILIZACION I.E. IPAR KALLPA",
+        mainImage: "ipar1.jpeg",
+        middleImages: [
+            "ipar2.jpeg",
+            "ipar3.jpeg",
+            "ipar4.jpeg"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "SENSIBILIZACION I.E. I. HUERTO INFANTIL (PADRES)",
+        mainImage: "huerto1.jpeg",
+        middleImages: [
+            "huerto2.jpeg",
+            "huerto3.jpeg",
+            "huerto4.jpeg"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "SENSIBILIZACION I.E. ABA",
+        mainImage: "aba1.jpeg",
+        middleImages: [
+            "aba2.jpeg",
+            "aba3.jpeg",
+            "aba4.jpeg"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "SENSIBILIZACION I. E. LA SALLE",
+        mainImage: "salle1.jpeg",
+        middleImages: [
+            "salle2.jpeg",
+            "salle3.jpeg",
+            "salle4.jpeg"
+        ],
+        stats:
+        {
+            participantes: 150,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
+        title: "LAVADO DE LLANATAS Y PINTADO  ( PUNTOS CRITICOS)",
+        mainImage: "lavado1.jpeg",
+        middleImages: [
+            "lavado2.jpeg",
+            "lavado3.jpeg",
+            "lavado4.jpeg"
+        ],
+        stats:
+        {
+            participantes: 20,
+            reciclados: 70,
+            horas: 100
+        },
+    },
+    {
         title: "AV. FITZCARRALD CON PSJ CARLOS BRIOLO",
         mainImage: "c3-3.png",
         middleImages: [
@@ -20,7 +140,7 @@ const slides = [
         },
     },
     {
-        title: "JR TACNA CON PSJ LAS ORQUÍDEAS",
+        title: "JR. TACNA CON PSJ LAS ORQUÍDEAS",
         mainImage: "c2-4.png",
         middleImages: [
             "c2-2.png",
@@ -172,7 +292,7 @@ const Section8 = () => {
                                 />
                                 <div className='grid grid-cols-3 gap-2 py-2'>
                                     {item.middleImages.map((i, index) =>
-                                        <img key={index} src={i} className='w-full h-45 hover:scale-105 duration-400 rounded-lg' alt="" />)}
+                                        <img key={index} src={i} className='w-full h-45 object-cover hover:scale-105 duration-400 rounded-lg' alt="" />)}
                                 </div>
                                 <div className='bg-gray-100 flex gap-2 items-center lg:px-20 justify-between p-2 text-gray-400'>
                                     <div className='flex items-center gap-2'>
