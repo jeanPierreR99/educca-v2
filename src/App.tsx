@@ -1,12 +1,18 @@
-import Layout from "./components/layout/Layout"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Gallery from "./page/Gallery";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Layout />
-    </>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index element={<Layout />} /> {/* / */}
+          <Route path="gallery" element={<Gallery />} /> {/* /gallery */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
