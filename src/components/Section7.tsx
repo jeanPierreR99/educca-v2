@@ -1,57 +1,95 @@
-import { motion } from 'framer-motion';
-
-const images = [
-    "Recurso 20con lineas.png",
-    "ae1.jpg",
-    "ae2.jpg",
-    "ae3.jpg"
-];
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { useFetch } from "../lib/usefetch";
+import { useEffect } from "react";
+import { API_PATH } from "../lib/api";
 
 const Section7 = () => {
-    return (
-        <div className="text-center relative">
-            {/* Título principal */}
-            <motion.h4
-                initial={{ opacity: 0, y: 40 }}
+  const navigate = useNavigate();
+  const { data, fetchNextPage, loading } = useFetch<any>(
+    "/comunications-external/educca",
+    4
+  );
+
+  useEffect(() => {
+    fetchNextPage();
+  }, []);
+
+  return (
+    <div className="text-center relative">
+      {/* 🔹 Título principal */}
+      <motion.h4
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-3xl md:text-4xl pt-10 text-green-600 font-bold max-w-2xl mx-auto"
+      >
+        ANUNCIO DE EVENTOS
+      </motion.h4>
+
+      {/* 🔹 Subtítulo */}
+      <motion.h5
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mt-2 px-4 md:px-0"
+      >
+        Este año 2025 el programa EDUCCA viene realizando eventos y campañas de
+        educación ambiental
+      </motion.h5>
+
+      {/* 🔹 Galería de imágenes */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-10 py-10 relative overflow-hidden 2xl:overflow-visible">
+        {/* Decoraciones laterales */}
+        <img
+          src="Recurso 19con lineas.png"
+          className="absolute h-full hidden lg:block md:w-80 -left-24"
+          alt=""
+        />
+        <img
+          src="Recurso 19con lineas.png"
+          className="absolute h-full hidden lg:block md:w-80 -right-24 rotate-40"
+          alt=""
+        />
+
+        {/* 🔸 Si hay datos */}
+        {data.length > 0
+          ? data.map((item: any, i: number) => (
+              <motion.img
+                key={item.id || i}
+                src={`${API_PATH}${item.ruta}`}
+                alt={item.titulo || `evento-${i}`}
+                className="w-full h-[400px] object-cover  hover:scale-105 relative transition-transform duration-300 rounded-xl shadow-md"
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="text-3xl md:text-4xl pt-10 text-green-600 font-bold max-w-2xl mx-auto"
-            >
-                ANUNCIO DE EVENTOS
-            </motion.h4>
+              />
+            ))
+          : !loading && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="col-span-full text-gray-500 text-lg mt-8"
+              >
+                No hay eventos disponibles por el momento.
+              </motion.p>
+            )}
+      </div>
 
-            {/* Subtítulo */}
-            <motion.h5
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mt-2 px-4 md:px-0"
-            >
-                Este año 2025 el programa EDUCCA viene realizando eventos y campañas de educación ambiental
-            </motion.h5>
-
-            {/* Galería de imágenes animadas */}
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-10 py-10 relative overflow-hidden 2xl:overflow-visible'>
-                <img src="Recurso 19con lineas.png" className='absolute h-full hidden lg:block md:w-80 -left-24' alt="" />
-                <img src="Recurso 19con lineas.png" className='absolute h-full hidden lg:block md:w-80 -right-24 rotate-40' alt="" />
-
-                {images.map((src, i) => (
-                    <motion.img
-                        key={i}
-                        src={src}
-                        alt={`evento-${i}`}
-                        className="w-full h-full object-cover hover:scale-105 relative transition-transform duration-300"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: i * 0.2 }}
-                        viewport={{ once: true }}
-                    />
-                ))}
-            </div>
-        </div>
-    );
+      {/* 🔹 Botón */}
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.98 }}
+        onClick={() => navigate("/comunications")}
+        className="mt-10 mb-12 font-bold inline-flex items-center gap-2 bg-green-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-green-700 transition-all"
+      >
+        Ver todos los anuncios
+      </motion.button>
+    </div>
+  );
 };
 
 export default Section7;

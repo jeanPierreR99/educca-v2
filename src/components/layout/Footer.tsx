@@ -45,7 +45,7 @@ const Footer = () => {
                     <h4 className="text-lg font-semibold mb-4">Ubicación</h4>
                     <iframe
                         title="Ubicación Municipalidad Tambopata"
-                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d839.729330009995!2d-69.17536645076666!3d-12.594832349289103!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1754311647979!5m2!1ses!2spe"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1363.9749335612016!2d-69.17535247697889!3d-12.594876218581506!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1760711813823!5m2!1ses!2spe"
                         width="100%"
                         height="200"
                         loading="lazy"

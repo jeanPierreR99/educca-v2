@@ -464,9 +464,11 @@ const Gallery = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-4xl font-extrabold text-white tracking-tight drop-shadow-sm"
+        className="text-4xl font-extrabold mt-10 tracking-tight bg-gradient-to-r from-green-400 to-lime-300 bg-clip-text text-transparent"
       >
-        GALERÍA EDUCCA
+        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-green-400 to-lime-300 bg-clip-text text-transparent">
+          Galería EDUCCA
+        </h2>
       </motion.h4>
 
       {/* Contenedor de imágenes */}

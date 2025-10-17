@@ -5,7 +5,9 @@ button{
 *{
   outline: none;
 }
-/* Suavizar el fondo del lightbox */
 .yarl__container {
-  background-color: rgba(0, 0, 0, 0.658) !important; /* antes era 0.9 por defecto */
+  background-color: rgba(0, 0, 0, 0.658) !important;
+}
+*{
+  font-family: 'Omnes', sans-serif;
 }

@@ -1,9 +1,9 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect, useCallback, useState } from "react";
-import { ChevronLeft, ChevronRight, Image } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Autoplay from 'embla-carousel-autoplay'
+import Autoplay from "embla-carousel-autoplay";
 
 const slides = [
   {
@@ -194,9 +194,8 @@ const Section8 = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
         onClick={() => navigate("/gallery")}
-        className="mt-10 mb-12 inline-flex items-center gap-2 bg-green-600 text-white px-6 py-2  rounded-md shadow-lg hover:bg-green-700 transition-all"
+        className="mt-10 mb-12 inline-flex font-bold items-center gap-2 bg-green-600 text-white px-6 py-2  rounded-md shadow-lg hover:bg-green-700 transition-all"
       >
-        <Image className="w-5 h-5" />
         Ver toda la galería
       </motion.button>
     </div>

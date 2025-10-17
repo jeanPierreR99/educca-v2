@@ -1,5 +1,7 @@
 import Banner from "../components/Banner";
+import ComunicationsModal from "../components/ComunicationsModal";
 import ContactForm from "../components/ContactForm";
+import NoticeLight from "../components/NoticeLight";
 import Section1 from "../components/Section1";
 import Section2 from "../components/Section2";
 import Section3 from "../components/Section3";
@@ -16,6 +18,8 @@ const Home = () => {
       <Banner />
       <Section1 />
       <Section2 />
+      <NoticeLight></NoticeLight>
+
       <Section3 />
       <Section4 />
       <Section5 />
@@ -23,6 +27,7 @@ const Home = () => {
       <Section7 />
       <Section8 />
       <ContactForm />
+      <ComunicationsModal />
       <ScrollToTop />
     </div>
   );
