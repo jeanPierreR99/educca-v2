@@ -59,10 +59,10 @@ const Comunications = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-100 via-gray-50 to-gray-100 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-900 text-center py-10 relative">
+    <section className="min-h-screen bg-gradient-to-b    from-neutral-900 via-neutral-950 to-neutral-900 text-center py-10 relative">
       <Link
         to="/"
-        className="absolute z-20 hover:bg-gray-500/40 top-6 left-6 bg-white/80 dark:bg-neutral-800/70 backdrop-blur-md text-gray-700 dark:text-gray-100 px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 border border-gray-200/40"
+        className="absolute z-20 hover:bg-gray-500/40 top-6 left-6 bg-neutral-800/70 backdrop-blur-md text-gray-100 px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 border border-gray-200/40"
       >
         ← Volver al inicio
       </Link>
@@ -93,7 +93,7 @@ const Comunications = () => {
             transition={{ duration: 0.5, delay: idx * 0.1 }}
             viewport={{ once: true }}
             onClick={() => setSelectedImage(item.ruta)}
-            className="relative rounded-2xl overflow-hidden bg-white dark:bg-neutral-900 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+            className="relative rounded-2xl overflow-hidden bg-neutral-900 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
           >
             <div className="h-[500px] w-full overflow-hidden">
               <img

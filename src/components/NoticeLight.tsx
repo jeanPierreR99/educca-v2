@@ -96,7 +96,7 @@ const NoticeCards = () => {
                     <h3 className="text-lg font-semibold text-green-600 line-clamp-2 mb-2">
                       {news.titulo}
                     </h3>
-                    <p className="text-gray-600 text-sm line-clamp-3">
+                    <p className="text-gray-400 text-sm line-clamp-3">
                       {news.corta}
                     </p>
                   </div>

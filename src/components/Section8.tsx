@@ -8,32 +8,57 @@ import Autoplay from "embla-carousel-autoplay";
 const slides = [
   {
     title: "SEPTIMO ECOTRUEQUE",
-    mainImage: "ecotrueque1.jpeg",
-    middleImages: ["ecotrueque2.jpeg", "ecotrueque3.jpeg", "ecotrueque4.jpeg"],
+    mainImage:
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659903101-832255926.jpeg",
+    middleImages: [
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659903104-976384467.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659903105-107254650.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659903107-159415935.jpeg",
+    ],
     stats: { participantes: 150, reciclados: 70, horas: 100 },
   },
   {
     title: "SENSIBLIZACIÓN I.E. MARCELINO CHAMPAGNAT",
-    mainImage: "marcelino1.jpg",
-    middleImages: ["marcelino2.JPG", "marcelino3.JPG", "marcelino4.JPG"],
+    mainImage:
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659866661-141259334.jpg",
+    middleImages: [
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659866663-575921258.JPG",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659866686-851732424.JPG",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659866736-299420002.JPG",
+    ],
     stats: { participantes: 150, reciclados: 70, horas: 100 },
   },
   {
     title: "SENSIBILIZACION I.E. TRILCE",
-    mainImage: "trilce1.jpeg",
-    middleImages: ["trilce2.jpeg", "trilce3.jpeg", "trilce4.jpeg"],
+    mainImage:
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659837474-751145839.jpeg",
+    middleImages: [
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659837478-526010579.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659837481-980159609.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659837484-852210480.jpeg",
+    ],
     stats: { participantes: 43, reciclados: 70, horas: 60 },
   },
   {
     title: "SENSIBILIZACION I.E. IPAR KALLPA",
-    mainImage: "ipar1.jpeg",
-    middleImages: ["ipar2.jpeg", "ipar3.jpeg", "ipar4.jpeg"],
+    mainImage:
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659812337-446573624.jpeg",
+    middleImages: [
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659812339-166543014.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659812339-961498580.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659812344-178921812.jpeg",
+    ],
     stats: { participantes: 150, reciclados: 70, horas: 100 },
   },
   {
     title: "SENSIBILIZACION I.E. I. HUERTO INFANTIL (PADRES)",
-    mainImage: "huerto1.jpeg",
-    middleImages: ["huerto2.jpeg", "huerto3.jpeg", "huerto4.jpeg"],
+    mainImage:
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659725209-55536641.jpeg",
+    middleImages: [
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659725210-539945305.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659725210-107810572.jpeg",
+      "https://portal.munitambopata.gob.pe/storage/2025/educca/1761659725211-318217129.jpeg",
+    ],
     stats: { participantes: 150, reciclados: 70, horas: 100 },
   },
 ];

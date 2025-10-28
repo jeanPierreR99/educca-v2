@@ -17,7 +17,7 @@ export interface INotice {
 
 const Notice = () => {
   const { data, hasMore, fetchNextPage, loading, reset } = useFetch<INotice>(
-    "/notices/all/type/educca",
+    "/notices/all/type/procompite",
     9
   );
   const loaderRef = useRef<HTMLDivElement | null>(null);
@@ -100,7 +100,7 @@ const Notice = () => {
     <section className="min-h-screen bg-gradient-to-b from-neutral-900 via-neutral-950 to-neutral-900 text-white py-10 px-6 relative">
       <Link
         to="/"
-        className="absolute z-20 hover:bg-gray-500/40 top-6 left-6 bg-white/80 dark:bg-neutral-800/70 backdrop-blur-md text-gray-700 dark:text-gray-100 px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 border border-gray-200/40"
+        className="absolute z-20 hover:bg-gray-500/40 top-6 left-6  bg-neutral-800/70 backdrop-blur-md  text-gray-100 px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 border border-gray-200/40"
       >
         ← Volver al inicio
       </Link>
@@ -202,10 +202,10 @@ const Notice = () => {
               <span className="text-sm text-lime-400 font-semibold uppercase ">
                 {selected.titulo}
               </span>
-              <h3 className="text-3xl font-bold text-white mt-2 mb-4">
+              <h3 className="text-3xl font-bold text-white mt-2 mb-4 whitespace-pre-line">
                 {selected.corta}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed whitespace-pre-line">
                 {selected.descripcion}
               </p>
               <p className="text-gray-400 text-xs mt-4">
