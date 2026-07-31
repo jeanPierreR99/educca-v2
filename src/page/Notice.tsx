@@ -17,7 +17,7 @@ export interface INotice {
 
 const Notice = () => {
   const { data, hasMore, fetchNextPage, loading, reset } = useFetch<INotice>(
-    "/notices/all/type/procompite",
+    "/notices/all/type/educca",
     9
   );
   const loaderRef = useRef<HTMLDivElement | null>(null);
